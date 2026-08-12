@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 31" role="img" aria-labelledby="egg-title egg-desc">
+  <title id="egg-title">EGTP egg icon</title>
+  <desc id="egg-desc">A yellow egg shape with a near-black outline.</desc>
+    <path d="M12 1.25C15.65 1.25 18.15 4.15 20.15 8.35C22.15 12.55 23.15 17.55 22.05 21.9C20.8 26.75 17.15 29.75 12 29.75C6.85 29.75 3.2 26.75 1.95 21.9C0.85 17.55 1.85 12.55 3.85 8.35C5.85 4.15 8.35 1.25 12 1.25Z" fill="#e9df31" stroke="#151515" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

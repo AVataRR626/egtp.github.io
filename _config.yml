@@ -10,8 +10,8 @@ event:
   date: Friday 16 October 2026
   date_iso: "2026-10-16"
   venue: UNSW CBD Campus
-  speaker_deadline: 30 August 2026
-  speaker_deadline_iso: "2026-08-30"
+  speaker_deadline: 6 September 2026 (extended from 30 August 2026)
+  speaker_deadline_iso: "2026-09-06"
 markdown: kramdown
 plugins:
   - jekyll-seo-tag

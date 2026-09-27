@@ -1,19 +1,19 @@
 ---
 layout: content
 title: Digital
-eyebrow: 1–5pm · Parallel stream
+eyebrow: 12:45–7pm · Room B
 permalink: /digital/
 ---
 
 Talks for people making, releasing and playing digital games.
 
-> **Programme to be announced.** Speaker proposals close **{{ site.event.speaker_deadline }}**.
-{: .programme-note}
-
-[Submit a talk proposal]({{ site.links.call_for_speakers }}){: .button target="_blank" rel="noopener"}
+[Buy tickets on Humanitix]({{ site.links.tickets }}){: .button .button-primary target="_blank" rel="noopener"}
 
 ## Stream schedule
 
-- 1–5pm — Digital talks
+Times and durations reflect the current published programme and may change.
+{: .programme-note}
+
+{% include stream-schedule.html stream="Digital" %}
 
 [View the full event schedule]({{ '/#schedule' | relative_url }})

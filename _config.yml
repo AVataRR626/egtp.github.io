@@ -6,6 +6,10 @@ lang: en-AU
 permalink: pretty
 links:
   call_for_speakers: "https://forms.gle/5GWrc53yLogoR5cc8"
+  tickets: "https://events.humanitix.com/egtp-2026/tickets"
+  ticketing_page: "https://events.humanitix.com/egtp-2026"
+  instagram: "https://www.instagram.com/everygametalkpossible/"
+  bluesky: "https://bsky.app/profile/egtp.org"
 event:
   date: Friday 16 October 2026
   date_iso: "2026-10-16"
@@ -13,6 +17,16 @@ event:
   speaker_deadline: 6 September 2026 (extended from 30 August 2026)
   speaker_deadline_iso: "2026-09-06"
 markdown: kramdown
+collections:
+  talks:
+    output: true
+    permalink: /talks/:name/
+defaults:
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

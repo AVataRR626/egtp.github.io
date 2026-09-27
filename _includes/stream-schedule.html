@@ -1,0 +1,59 @@
+{% assign all_talks = site.pages | where: "layout", "__talk_collection_fallback__" %}
+{% if site.talks %}
+  {% assign all_talks = site.talks %}
+{% endif %}
+{% assign confirmed_talks = all_talks | where: "status", "confirmed" %}
+{% assign stream_talks = confirmed_talks | where: "stream", include.stream | sort: "time" %}
+<div class="schedule-wrap">
+  <table class="stream-schedule">
+    <thead>
+      <tr>
+        <th scope="col">Time</th>
+        <th scope="col">Speaker</th>
+        <th scope="col">Topic / title</th>
+        <th scope="col">Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="schedule-shared-row">
+        <th scope="row">12:00pm</th>
+        <td>—</td>
+        <td>Doors open and networking</td>
+        <td>60 min</td>
+      </tr>
+      {% if stream_talks.size == 0 %}
+        <tr>
+          <th scope="row">From 1:00pm</th>
+          <td>To be confirmed</td>
+          <td>Programme details coming soon</td>
+          <td>—</td>
+        </tr>
+      {% else %}
+        {% for talk in stream_talks %}
+          {% if talk.time < "16:00" %}
+            {% include talk-schedule-row.html talk=talk %}
+          {% endif %}
+        {% endfor %}
+        <tr class="schedule-break-row">
+          <th scope="row">4:00pm</th>
+          <td>—</td>
+          <td><strong>Break and networking</strong></td>
+          <td>60 min</td>
+        </tr>
+        {% for talk in stream_talks %}
+          {% if talk.time >= "17:00" %}
+            {% include talk-schedule-row.html talk=talk %}
+          {% endif %}
+        {% endfor %}
+        {% if include.stream == "Tabletop" %}
+          <tr class="schedule-shared-row">
+            <th scope="row">7:30pm</th>
+            <td>—</td>
+            <td>Networking</td>
+            <td>—</td>
+          </tr>
+        {% endif %}
+      {% endif %}
+    </tbody>
+  </table>
+</div>

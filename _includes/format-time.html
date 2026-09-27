@@ -1,0 +1,14 @@
+{%- assign time_parts = include.time | split: ":" -%}
+{%- assign hour_24 = time_parts[0] | plus: 0 -%}
+{%- assign minute = time_parts[1] -%}
+{%- assign hour_12 = hour_24 -%}
+{%- assign meridiem = "am" -%}
+{%- if hour_24 >= 12 -%}
+  {%- assign meridiem = "pm" -%}
+{%- endif -%}
+{%- if hour_24 == 0 -%}
+  {%- assign hour_12 = 12 -%}
+{%- elsif hour_24 > 12 -%}
+  {%- assign hour_12 = hour_24 | minus: 12 -%}
+{%- endif -%}
+{{- hour_12 -}}:{{- minute -}}{{- meridiem -}}

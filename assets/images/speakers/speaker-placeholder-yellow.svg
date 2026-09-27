@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Generic speaker placeholder</title>
+  <desc id="desc">A blank-faced person-shaped silhouette on a yellow background.</desc>
+  <rect width="400" height="400" fill="#f5df51"/>
+  <circle cx="200" cy="126" r="70" fill="#f7f4ec" stroke="#171717" stroke-width="12"/>
+  <path d="M92 360c0-81 48-142 108-142s108 61 108 142" fill="#f7f4ec" stroke="#171717" stroke-width="12" stroke-linecap="round"/>
+</svg>

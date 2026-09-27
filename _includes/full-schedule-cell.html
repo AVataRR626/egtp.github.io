@@ -1,0 +1,101 @@
+{% assign slot_parts = include.slot | split: ":" %}
+{% assign slot_hour_minutes = slot_parts[0] | times: 60 %}
+{% assign slot_start = slot_hour_minutes | plus: slot_parts[1] %}
+{% assign slot_end = slot_start | plus: 15 %}
+{% assign interval_count = 0 %}
+{% assign first_interval_talk = nil %}
+{% assign has_unconfirmed = false %}
+
+{% for candidate in include.talks %}
+  {% if candidate.time and candidate.time != "" %}
+    {% assign candidate_parts = candidate.time | split: ":" %}
+    {% assign candidate_hour_minutes = candidate_parts[0] | times: 60 %}
+    {% assign candidate_start = candidate_hour_minutes | plus: candidate_parts[1] %}
+    {% if candidate_start >= slot_start and candidate_start < slot_end %}
+      {% assign interval_count = interval_count | plus: 1 %}
+      {% unless first_interval_talk %}{% assign first_interval_talk = candidate %}{% endunless %}
+      {% if candidate.status == "unconfirmed" %}{% assign has_unconfirmed = true %}{% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% assign effective_rowspan = include.rowspan | default: 1 %}
+{% if effective_rowspan < 1 %}{% assign effective_rowspan = 1 %}{% endif %}
+{% assign confirmation_class = "" %}
+{% if interval_count == 1 and has_unconfirmed %}{% assign confirmation_class = " is-unconfirmed" %}{% endif %}
+
+{% if interval_count > 0 %}
+  <td class="full-schedule-slot full-schedule-slot-{{ include.stream }} full-schedule-span-{{ effective_rowspan }}{% if interval_count > 1 %} has-sequential-talks{% endif %}{{ confirmation_class }}" style="--slot-span: {{ effective_rowspan }}"{% if effective_rowspan > 1 %} rowspan="{{ effective_rowspan }}"{% endif %}>
+    {% if interval_count > 1 %}
+      <div class="full-schedule-sequential-list">
+        {% for talk in include.talks %}
+          {% if talk.time and talk.time != "" %}
+            {% assign talk_parts = talk.time | split: ":" %}
+            {% assign talk_hour_minutes = talk_parts[0] | times: 60 %}
+            {% assign talk_start = talk_hour_minutes | plus: talk_parts[1] %}
+            {% if talk_start >= slot_start and talk_start < slot_end %}
+              {% if talk.status == "unconfirmed" and page.show_unconfirmed_details != true %}
+                <div class="full-schedule-sequential-talk is-unconfirmed is-tbc">To Be Confirmed</div>
+              {% else %}
+                <div class="full-schedule-sequential-talk{% if talk.status == "unconfirmed" %} is-unconfirmed{% endif %}">
+                  <span class="full-schedule-sequential-meta">
+                    <strong>{% include format-time.html time=talk.time %}</strong>
+                    {% if talk.speakers and talk.speakers.size > 0 %}
+                      <span>
+                        {% for speaker in talk.speakers %}{{ speaker.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+                      </span>
+                    {% endif %}
+                  </span>
+                  <a href="{{ talk.url | relative_url }}">{{ talk.title }} <span class="full-schedule-duration">({{ talk.duration }})</span></a>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <span class="full-schedule-reveal full-schedule-reveal-sequential">
+        {% for talk in include.talks %}
+          {% if talk.time and talk.time != "" %}
+            {% assign talk_parts = talk.time | split: ":" %}
+            {% assign talk_hour_minutes = talk_parts[0] | times: 60 %}
+            {% assign talk_start = talk_hour_minutes | plus: talk_parts[1] %}
+            {% if talk_start >= slot_start and talk_start < slot_end %}
+              {% if talk.status == "unconfirmed" and page.show_unconfirmed_details != true %}
+                <span class="full-schedule-reveal-talk is-tbc">To Be Confirmed</span>
+              {% else %}
+                <a class="full-schedule-reveal-talk" href="{{ talk.url | relative_url }}" tabindex="-1" title="{{ talk.title | escape }} ({{ talk.duration }})">
+                  <span class="full-schedule-reveal-title">{{ talk.title }}</span>
+                  <small>({{ talk.duration }}){% if talk.status == "unconfirmed" %} · Unconfirmed{% endif %}</small>
+                </a>
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </span>
+    {% else %}
+      {% assign talk = first_interval_talk %}
+      {% if talk.status == "unconfirmed" and page.show_unconfirmed_details != true %}
+        <div class="full-schedule-tbc">To Be Confirmed</div>
+      {% else %}
+        <div class="full-schedule-entry">
+          <div class="full-schedule-speakers">
+            <span class="full-schedule-label">Speaker{% if talk.speakers.size > 1 %}s{% endif %}</span>
+            {% for speaker in talk.speakers %}
+              <span>{{ speaker.name }}</span>
+            {% endfor %}
+          </div>
+          <div class="full-schedule-talk">
+            <span class="full-schedule-label">Talk</span>
+            <a class="full-schedule-talk-title full-schedule-talk-title-{{ effective_rowspan }}" href="{{ talk.url | relative_url }}" title="{{ talk.title | escape }} ({{ talk.duration }})">{{ talk.title }} <span class="full-schedule-duration">({{ talk.duration }})</span></a>
+            <div class="full-schedule-meta">
+              {% if talk.status == "unconfirmed" %}<span class="full-schedule-status">Unconfirmed</span>{% endif %}
+            </div>
+          </div>
+        </div>
+        <a class="full-schedule-reveal" href="{{ talk.url | relative_url }}" tabindex="-1"><span>{{ talk.title }} <small>({{ talk.duration }})</small></span></a>
+      {% endif %}
+    {% endif %}
+  </td>
+{% else %}
+  <td class="full-schedule-empty"><span class="visually-hidden">No talk scheduled</span></td>
+{% endif %}

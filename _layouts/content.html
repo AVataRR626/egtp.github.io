@@ -8,6 +8,6 @@ layout: default
     <h1 id="page-title">{{ page.title }}.</h1>
   </div>
 </section>
-<article class="wrap page-copy">
+<article class="wrap page-copy{% if page.wide %} page-copy-wide{% endif %}{% if page.full_width %} page-copy-full{% endif %}">
   {{ content }}
 </article>

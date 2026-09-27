@@ -1,0 +1,11 @@
+{% assign speaker = include.speaker %}
+{% if speaker.personal_url != empty or speaker.social_links.size > 0 %}
+  <ul class="speaker-links" aria-label="Links for {{ speaker.name }}">
+    {% if speaker.personal_url != empty %}
+      <li><a href="{{ speaker.personal_url }}" target="_blank" rel="noopener">Website</a></li>
+    {% endif %}
+    {% for social_link in speaker.social_links %}
+      <li><a href="{{ social_link.url }}" target="_blank" rel="noopener">{{ social_link.label }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}

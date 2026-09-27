@@ -1,19 +1,18 @@
 ---
 layout: content
 title: Lightning talks
-eyebrow: 6–7pm · One shared stream
+eyebrow: Programme update
 permalink: /lightning-talks/
 ---
 
-To close the day, everyone comes together for a fast, lively run of short talks across every kind of game.
+There is no separate shared lightning-talk session in the current published programme. Short talks appear within the Digital and Academic streams.
 
-> **Programme to be announced.** Speaker proposals close **{{ site.event.speaker_deadline }}**.
-{: .programme-note}
+[Buy tickets on Humanitix]({{ site.links.tickets }}){: .button .button-primary target="_blank" rel="noopener"}
 
-[Submit a talk proposal]({{ site.links.call_for_speakers }}){: .button target="_blank" rel="noopener"}
+## Choose a stream
 
-## Schedule
+- [Digital schedule]({{ '/digital/' | relative_url }})
+- [Academic schedule]({{ '/academic/' | relative_url }})
+- [Tabletop schedule]({{ '/tabletop/' | relative_url }})
 
-- 6–7pm — Lightning talks
-
-[View the full event schedule]({{ '/#schedule' | relative_url }})
+[View the event overview]({{ '/#schedule' | relative_url }})

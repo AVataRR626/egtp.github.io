@@ -1,0 +1,15 @@
+{% assign talk = include.talk %}
+<tr>
+  <th scope="row">{% include format-time.html time=talk.time %}</th>
+  <td>
+    {% if talk.speakers and talk.speakers.size > 0 %}
+      {% for speaker in talk.speakers %}
+        {{ speaker.name }}{% unless forloop.last %}<br>{% endunless %}
+      {% endfor %}
+    {% else %}
+      To be confirmed
+    {% endif %}
+  </td>
+  <td><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></td>
+  <td>{{ talk.duration | default: "—" }}</td>
+</tr>

@@ -15,7 +15,7 @@ speakers:
     job_title: "Co-founder and Executive Producer"
     org: "Chaos Theory Games"
     org_url: "https://www.chaostheorygames.com/"
-    photo: "james-lockrey.jpg"
+    photo: "james-lockrey-fun.jpg"
     bio: >-
       James Lockrey is a game creator, executive producer and co-founder of Chaos Theory Games, an Australian studio building original IP and work-for-hire games with heart, purpose and juice. Across more than 13 years, James has helped launch over 100 games across PC, console, mobile, VR and serious games. He leads the studio's strategy, production and original-IP development with a focus on sustainable scope, early validation and thoughtful player experiences.
 ---

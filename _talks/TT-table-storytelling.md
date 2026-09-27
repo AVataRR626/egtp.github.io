@@ -17,7 +17,7 @@ speakers:
     job_title: ""
     org: ""
     org_url: ""
-    photo: ""
+    photo: "angelus-morningstar.png"
     bio: >-
       Angelus Morningstar has spent several years designing Inkbright, an original tabletop RPG inspired by Actual Plays and story rich genres, and running long-form actual-play campaigns as its narrator. Prior to his foray into designing he was a tabletop game reviewer for 8 years. They have also presented as a tutor and guest lecturer for the Department of Government and International Relations at the University of Sydney.
 ---

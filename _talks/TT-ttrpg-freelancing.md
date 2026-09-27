@@ -11,7 +11,7 @@ speakers:
     personal_url: "https://the-i-of-qing.carrd.co/"
     social_links:
       - label: Bluesky
-        url: https://bsky.app/profile/the-i-of-qing.bsky.social"
+        url: https://bsky.app/profile/the-i-of-qing.bsky.social
     job_title: "Freelance Game Designer"
     org: ""
     org_url: ""

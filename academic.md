@@ -16,4 +16,4 @@ Times and durations reflect the selected programme and may change.
 
 {% include stream-schedule.html stream="Academic" %}
 
-[View the full event schedule]({{ '/#schedule' | relative_url }})
+[View the Schedule Overview]({{ '/#schedule' | relative_url }}) | [Full Schedule]({{ '/full-schedule/' | relative_url }})

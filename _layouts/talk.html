@@ -59,11 +59,14 @@ layout: default
     {% endif %}
   </section>
 
-  {% if page.back_url %}
-    <p class="talk-back-link"><a href="{{ page.back_url | relative_url }}">{{ page.back_label | default: "Back to the programme" }}</a></p>
-  {% else %}
-    {% assign stream_slug = page.stream | slugify %}
-    {% assign stream_path = '/' | append: stream_slug | append: '/' %}
-    <p class="talk-back-link"><a href="{{ stream_path | relative_url }}">View the {{ page.stream }} stream schedule</a></p>
-  {% endif %}
+  <p class="talk-back-link">
+    {% if page.back_url %}
+      <a href="{{ page.back_url | relative_url }}">{{ page.back_label | default: "Back to the programme" }}</a>
+    {% else %}
+      {% assign stream_slug = page.stream | slugify %}
+      {% assign stream_path = '/' | append: stream_slug | append: '/' %}
+      <a href="{{ stream_path | relative_url }}">{{ page.stream }} stream schedule</a>
+    {% endif %}
+    | <a href="{{ '/full-schedule/' | relative_url }}">Full Schedule</a>
+  </p>
 </article>

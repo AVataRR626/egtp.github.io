@@ -16,4 +16,4 @@ This is the current draft Tabletop schedule. Times and durations may change.
 
 {% include stream-schedule.html stream="Tabletop" %}
 
-[View the full event schedule]({{ '/#schedule' | relative_url }})
+[View the Schedule Overview]({{ '/#schedule' | relative_url }}) | [Full Schedule]({{ '/full-schedule/' | relative_url }})

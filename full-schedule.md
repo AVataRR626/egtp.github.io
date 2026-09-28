@@ -13,7 +13,7 @@ All talks across the three streams are shown below. Unconfirmed programme slots 
 {% assign tabletop_talks = site.talks | where: "stream", "Tabletop" | sort: "time" %}
 {% assign digital_talks = site.talks | where: "stream", "Digital" | sort: "time" %}
 {% assign academic_talks = site.talks | where: "stream", "Academic" | sort: "time" %}
-{% assign before_break = "12:45,13:00,13:15,13:30,13:45,14:00,14:15,14:30,14:45,15:00,15:15,15:30,15:45" | split: "," %}
+{% assign before_break = "13:00,13:15,13:30,13:45,14:00,14:15,14:30,14:45,15:00,15:15,15:30,15:45" | split: "," %}
 {% assign after_break = "17:00,17:15,17:30,17:45,18:00,18:15,18:30,18:45,19:00,19:15" | split: "," %}
 
 <div class="schedule-wrap full-schedule-wrap">
@@ -33,12 +33,10 @@ All talks across the three streams are shown below. Unconfirmed programme slots 
       </tr>
     </thead>
     <tbody>
-      <tr class="full-schedule-time-row full-schedule-shared-row">
-        <th scope="row">12:00pm</th>
-        <td colspan="3" rowspan="3"><strong>Doors open and networking</strong></td>
+      <tr class="full-schedule-shared-row">
+        <th scope="row">12–1pm</th>
+        <td colspan="3"><strong>Doors open and networking</strong></td>
       </tr>
-      <tr class="full-schedule-time-row"><th scope="row">12:15pm</th></tr>
-      <tr class="full-schedule-time-row"><th scope="row">12:30pm</th></tr>
       {% assign tabletop_remaining = 0 %}
       {% assign digital_remaining = 0 %}
       {% assign academic_remaining = 0 %}

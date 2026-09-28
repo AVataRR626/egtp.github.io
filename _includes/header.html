@@ -4,13 +4,35 @@
       <span class="egg-mark" aria-hidden="true"></span>
       <span>EGTP</span>
     </a>
-    <nav aria-label="Primary navigation">
+    <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">☰ Menu</button>
+    <nav id="primary-navigation" aria-label="Primary navigation">
       <a href="{{ '/#about' | relative_url }}">About</a>
       <a href="{{ '/#schedule' | relative_url }}">Schedule Overview</a>
       <a href="{{ '/full-schedule/' | relative_url }}">Full Schedule</a>
       <a href="{{ '/speakers/' | relative_url }}">Speakers</a>
       <a href="{{ '/#location' | relative_url }}">Getting there</a>
-      <a class="button header-ticket" href="{{ site.links.tickets }}" target="_blank" rel="noopener">Buy tickets</a>
     </nav>
+    <a class="button header-ticket" href="{{ site.links.tickets }}" target="_blank" rel="noopener">Buy tickets</a>
   </div>
 </header>
+<script>
+  (() => {
+    const header = document.querySelector('.site-header');
+    const toggle = header.querySelector('.nav-toggle');
+    const nav = header.querySelector('#primary-navigation');
+
+    header.classList.add('is-ready');
+    toggle.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    nav.addEventListener('click', (event) => {
+      if (event.target.closest('a')) toggle.setAttribute('aria-expanded', 'false');
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  })();
+</script>

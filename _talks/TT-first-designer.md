@@ -9,9 +9,13 @@ duration: "30 min"
 speakers:
   - name: "Stephen McCowage"
     personal_url: ""
+    social_links:
+      - label: "LinkedIn"
+        url: "https://www.linkedin.com/in/stephen-mccowage/"
     job_title: ""
     org: ""
     org_url: ""
-    photo: ""
-    bio: ""
+    photo: "stephen-mccowage.jpg"
+    bio: >-
+      Stephen McCowage is an award winning Australian industrial designer and tabletop game designer based in Sydney. When he's not building real-world products, he's designing, making, and breaking games that are full of chaos and player interaction. In 2025, he signed his first published game, That Brick Game.
 ---

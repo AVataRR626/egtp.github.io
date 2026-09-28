@@ -10,6 +10,8 @@ show_unconfirmed_details: false
 
 All talks across the three streams are shown below. Unconfirmed programme slots are marked “To Be Confirmed” and remain subject to change. Select a confirmed talk title for its full description and speaker information.
 
+Check the individual [Tabletop]({{ '/tabletop/' | relative_url }}), [Digital]({{ '/digital/' | relative_url }}) and [Academic]({{ '/academic/' | relative_url }}) stream pages for focused schedules.
+
 {% assign tabletop_talks = site.talks | where: "stream", "Tabletop" | sort: "time" %}
 {% assign digital_talks = site.talks | where: "stream", "Digital" | sort: "time" %}
 {% assign academic_talks = site.talks | where: "stream", "Academic" | sort: "time" %}
@@ -123,4 +125,4 @@ All talks across the three streams are shown below. Unconfirmed programme slots 
   </table>
 </div>
 
-Programme details may change. Check the individual [Tabletop]({{ '/tabletop/' | relative_url }}), [Digital]({{ '/digital/' | relative_url }}) and [Academic]({{ '/academic/' | relative_url }}) stream pages for focused schedules.
+Programme details may change. 

@@ -9,9 +9,6 @@ duration: "30 min"
 speakers:
   - name: "Roko Zaper"
     personal_url: "https://www.nautilusepoch.com/"
-    social_links:
-      - label: "Website"
-        url: "https://www.nautilusepoch.com"
     job_title: "PhD Student"
     org: "UNSW"
     org_url: "https://www.unsw.edu.au/"

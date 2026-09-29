@@ -5,7 +5,7 @@ summary: >-
 stream: "Academic"
 status: "confirmed"
 time: "14:00"
-duration: "60 min"
+duration: "45 min"
 speakers:
   - name: "Dr. Ben Egliston"
     personal_url: "https://profiles.sydney.edu.au/benjamin.egliston"

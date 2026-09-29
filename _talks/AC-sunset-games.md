@@ -4,8 +4,8 @@ summary: >-
   This talk presents initial findings from research into games that have been sunset, or faced online-service withdrawal, over the past decade. Examining a sample of 567 games with sunset online features, it shows how often their accessibility and playability are limited and why preservation is a pressing issue. It also investigates the withdrawal process and the remedies, if any, created by developers and audiences.
 stream: "Academic"
 status: "confirmed"
-time: "15:00"
-duration: "30 min"
+time: "14:45"
+duration: "15 min"
 speakers:
   - name: "Dr. Ryan Stanton"
     personal_url: ""

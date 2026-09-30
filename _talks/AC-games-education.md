@@ -15,7 +15,7 @@ speakers:
     job_title: "Associate Lecturer"
     org: "Macquarie University"
     org_url: "https://www.mq.edu.au/"
-    photo: ""
+    photo: "abbie-hartman.jpg"
     bio: >-
       Abbie is a cultural and public historian based at Macquarie University. Her research examines how games function as forms of public pedagogy and help shape public understanding of the world around them.
 ---

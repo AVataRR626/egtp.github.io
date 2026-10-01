@@ -3,7 +3,7 @@ title: "Storytelling at the Table"
 summary: >-
   One of the hardest parts of running a roleplaying game is also its most rewarding: telling a story that responds to your players while still holding together. Too much planning turns the players into an audience; too little leaves nothing to hold onto. This talk explores how to work in the middle, let players and dice co-author the story, and set an effective pace at the table.
 stream: "Tabletop"
-status: "confirmed"
+status: "unconfirmed"
 time: "19:15"
 duration: "15 min"
 speakers:

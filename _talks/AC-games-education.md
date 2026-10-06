@@ -7,7 +7,7 @@ status: "confirmed"
 time: "13:00"
 duration: "60 min"
 speakers:
-  - name: "Dr Abbie Hartman"
+  - name: "Dr. Abbie Hartman"
     personal_url: ""
     social_links:
       - label: "LinkedIn"

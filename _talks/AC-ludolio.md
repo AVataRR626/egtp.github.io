@@ -12,7 +12,7 @@ speakers:
     job_title: ""
     org: "University of Sydney / Ludolio"
     org_url: "https://www.ludolio.com/"
-    photo: ""
+    photo: "ben-egliston.png"
     bio: ""
   - name: "Dr. Jen Scott Curwood"
     personal_url: "https://www.linkedin.com/in/jenscottcurwood/"
@@ -44,7 +44,7 @@ speakers:
     job_title: "Professor"
     org: "University of Sydney"
     org_url: "https://usyd.edu.au"
-    photo: ""
+    photo: "marcus-carter.png"
     bio: >-
       Professor Marcus Carter is a researcher in human-computer interaction, focusing on games, virtual reality and emerging technologies, where he founded the Sydney Games and Play Lab at the University of Sydney. He holds an ARC Future Fellowship examining the monetisation of children in the digital games industry, and was named the top researcher in Human-Computer Interaction in Australia by The Australian in 2021. He is a recipient of the DiGRA Australia Distinguished Scholar Award, recognising his sustained contribution to the games research community in Australia.
 ---

@@ -25,20 +25,22 @@ speakers:
     job_title: ""
     org: ""
     org_url: ""
-    photo: ""
+    photo: "kimberly-pater.jpg"
     bio: ""
-  - name: "Abigale Dell’Oro"
+  - name: "Abigail Dell’Oro"
     personal_url: ""
     job_title: ""
     org: ""
     org_url: ""
-    photo: ""
-    bio: ""
+    photo: "abigail-dell-oro.jpg"
+    bio: >-
+      Abigail Dell’Oro is a lifelong tabletop gaming enthusiast, having been running D&D campaigns for as long as she can remember. She is also an avid HEMAist, having represented the Old Sword Club at sabre tournaments both in Sydney and interstate.
   - name: "Dr Tess Gardner"
     personal_url: ""
     job_title: ""
     org: ""
     org_url: ""
-    photo: ""
-    bio: ""
+    photo: "tess-gardner.jpg"
+    bio: >-
+      Tess Gardner is an historian of early 20th century Australia and China and an historical fencer focusing on 19th century sabre. She enjoys strategy games and trashy sci-fi.
 ---

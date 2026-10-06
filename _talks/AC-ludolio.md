@@ -15,7 +15,7 @@ speakers:
     photo: "ben-egliston.png"
     bio: Ben Egliston is Chief Officer of Games of Ludolio and  Senior Lecturer in digital cultures and an Australian Research Council DECRA Fellow at the University of Sydney. He researches shifting business models and practices in the videogame industry, with particular attention to how institutional and economic arrangements shape the kinds of games that are made and the labour conditions under which they are produced.
   - name: "Dr. Caitlin Cole"
-    personal_url: "https://profiles.sydney.edu.au/eduardo.velloso"
+    personal_url: ""
     social_links:
       - label: "LinkedIn"
         url: "https://www.linkedin.com/in/caitlin-cole-71bb291b1/"

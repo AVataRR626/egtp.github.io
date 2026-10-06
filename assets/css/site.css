@@ -197,6 +197,13 @@ address { margin-bottom: 1.5rem; font-size: 1.1rem; font-style: normal; font-wei
 .speaker-directory-card[hidden] { display: none; }
 .speaker-card-front { display: flex; min-height: 100%; flex-direction: column; }
 .speaker-directory-photo { display: block; width: 100%; aspect-ratio: 1; border-bottom: 1px solid var(--ink); object-fit: cover; }
+/* Keep faces in view when these portrait photos are cropped to square cards. */
+.speaker-photo[src$="/tess-gardner.jpg"],
+.speaker-directory-photo[src$="/tess-gardner.jpg"],
+.speaker-photo[src$="/abigail-dell-oro.jpg"],
+.speaker-directory-photo[src$="/abigail-dell-oro.jpg"],
+.speaker-photo[src$="/kimberly-pater.jpg"],
+.speaker-directory-photo[src$="/kimberly-pater.jpg"] { object-position: center top; }
 .speaker-card-caption { display: flex; flex: 1; flex-direction: column; justify-content: space-between; gap: 0.6rem; padding: 1rem; }
 .speaker-directory-card h2 { margin: 0; font-size: clamp(1.45rem, 2.6vw, 2rem); line-height: 1; }
 .speaker-directory-card h3 { margin: 0 0 0.6rem; font-size: 1.2rem; }

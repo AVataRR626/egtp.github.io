@@ -4,8 +4,8 @@ summary: >-
   The benefits of using games in formal pedagogic settings, and the practical ways to do so, are well-established concerns for scholars. However, the best approach differs significantly according to an institution’s curriculum and resources and the discipline being taught. This paper examines the potential positive effects of integrating games and playful pedagogies into humanities subjects, alongside the potential pitfalls of this kind of engagement.
 stream: "Academic"
 status: "confirmed"
-time: "13:00"
-duration: "60 min"
+time: "13:15"
+duration: "45 min"
 speakers:
   - name: "Dr. Abbie Hartman"
     personal_url: ""

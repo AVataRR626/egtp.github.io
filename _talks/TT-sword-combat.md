@@ -26,7 +26,7 @@ speakers:
     org: ""
     org_url: ""
     photo: "kimberly-pater.jpg"
-    bio: ""
+    bio: "Kimberly Pater started fencing foil as a teenager, inspired heavily by her love of Tamora Pierce books and The Princess Bride. She has more recently begun HEMA and is enjoying dabbling in both sabre and rapier. She loves cooperative board games and is cautiously optimistic about WOW Forever."
   - name: "Abigail Dell’Oro"
     personal_url: ""
     job_title: ""
@@ -35,11 +35,14 @@ speakers:
     photo: "abigail-dell-oro.jpg"
     bio: >-
       Abigail Dell’Oro is a lifelong tabletop gaming enthusiast, having been running D&D campaigns for as long as she can remember. She is also an avid HEMAist, having represented the Old Sword Club at sabre tournaments both in Sydney and interstate.
-  - name: "Dr Tess Gardner"
+  - name: "Dr. Tess Gardner"
     personal_url: ""
     job_title: ""
-    org: ""
-    org_url: ""
+    social_links:
+      - label: "LinkedIn"
+        url: "https://au.linkedin.com/in/tess-gardner-948042254"
+    org: "Australian National University"
+    org_url: "https://history.cass.anu.edu.au/people/dr-tess-gardner"
     photo: "tess-gardner.jpg"
     bio: >-
       Tess Gardner is an historian of early 20th century Australia and China and an historical fencer focusing on 19th century sabre. She enjoys strategy games and trashy sci-fi.

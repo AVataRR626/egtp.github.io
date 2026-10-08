@@ -5,7 +5,7 @@ summary: >-
 stream: "Academic"
 status: "confirmed"
 time: "13:00"
-duration: "45 min"
+duration: "60 min"
 speakers:
   - name: "Dr. Abbie Hartman"
     personal_url: ""

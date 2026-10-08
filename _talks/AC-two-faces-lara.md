@@ -15,6 +15,6 @@ speakers:
     job_title: "Casual Academic"
     org: "University of Sydney"
     org_url: "https://www.sydney.edu.au/"
-    photo: "harriet-mary-flitcroft.png"
+    photo: ""
     bio: "Harriet Mary Flitcroft is a casual academic at the University of Sydney. Her teaching background spans game studies, digital cultures and media studies."
 ---

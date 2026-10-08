@@ -4,7 +4,7 @@ summary: >-
   For decades, students have learned linear algebra through flat, two-dimensional representations of fundamentally three-dimensional concepts. MathVR reimagines the experience by placing students inside the mathematics itself. Through immersive virtual reality, full hand presence and natural movement, learners can interact directly with vectors and operations in three-dimensional space, making complex mathematical relationships more intuitive while remaining accessible to students encountering linear algebra for the first time.
 stream: "Academic"
 status: "confirmed"
-time: "13:00"
+time: "18:15"
 duration: "15 min"
 speakers:
   - name: "Dr. Matt Cabanag"
